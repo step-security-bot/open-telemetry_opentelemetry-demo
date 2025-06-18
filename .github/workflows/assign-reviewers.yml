@@ -15,7 +15,12 @@ jobs:
     if: github.repository == 'open-telemetry/opentelemetry-demo'
     runs-on: ubuntu-latest
     steps:
-      - uses: dyladan/component-owners@main
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@002fdce3c6a235733a90a27c80493a3241e56863 # v2.12.1
+        with:
+          egress-policy: audit
+
+      - uses: dyladan/component-owners@58bd86e9814d23f1525d0a970682cead459fa783 # main
         with:
           # using this action to request review only (not assignment)
           assign-owners: false

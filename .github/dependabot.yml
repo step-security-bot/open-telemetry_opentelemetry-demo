@@ -88,3 +88,208 @@ updates:
         dependency-type: "development"
     schedule:
       interval: "daily"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /internal/tools
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /src/accounting
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/accounting
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/ad
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/cart/src
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /src/cart/src
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /src/cart/tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/checkout
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/checkout/genproto
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /src/checkout
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/currency
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/currency/genproto
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/email
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /src/email
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/flagd-ui
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/flagd-ui
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/fraud-detection
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/frontend-proxy
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/frontend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/frontend/genproto
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/frontend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/image-provider
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/kafka
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/load-generator
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/load-generator
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/payment
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/payment
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/product-catalog
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/product-catalog/genproto
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /src/product-catalog
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/quote
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /src/react-native-app
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/react-native-app
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/recommendation
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/recommendation/genproto
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/recommendation
+    schedule:
+      interval: daily
+
+  - package-ecosystem: cargo
+    directory: /src/shipping
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/shipping
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /test/tracetesting
+    schedule:
+      interval: daily
